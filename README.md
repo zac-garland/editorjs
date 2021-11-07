@@ -5,12 +5,16 @@
 
 <img src='man/figures/logo.svg' align="right" height="139" />
 
-A simple R wrapper of the [editorjs](https://editorjs.io/) editor.
+A simple R wrapper of the
+[editorjs](https://github.com/codex-team/editor.js) editor.
+
+Editor.js is a Block-Styled editor. Blocks are structural units, of
+which the Entry is composed. For example, `Paragraph`, `Heading`,
+`Image`, `Video`, `List` are Blocks.
 
 Plan:
 
-  - shiny demo app to go from editjs -\> distill rmarkdown -\> github
-    actions deploy site
+  - shiny -\> distill rmarkdown -\> github actions deploy site
 
 ## Installation
 

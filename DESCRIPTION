@@ -1,15 +1,12 @@
 Package: editorjs
-Title: What the Package Does (One Line, Title Case)
+Title: A simple R wrapper of the editorjs library
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "Zac",
-           family = "Garland",
-           role = c("aut", "cre"),
-           email = "zachary.garland@outlook.com")
-Description: What the package does (one paragraph).
+    person(given = "Zac", family = "Garland", role = c("aut", "cre"), email = "zachary.garland@outlook.com")
+Description: Editor.js is a Block-Styled editor. Blocks are structural units, of which the Entry is composed. For example, Paragraph, Heading, Image, Video, List are Blocks.
 License: MIT + file LICENSE
 Encoding: UTF-8
-Language: es
+Language: en
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
