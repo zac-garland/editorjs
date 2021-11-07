@@ -270,9 +270,6 @@ HTMLWidgets.widget({
 
   // download button
 
-  function encodeHTMLEntities(string) {
-  return string.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-  }
 
 
   downloadButton = document.getElementById('downloadButton');
@@ -280,7 +277,7 @@ HTMLWidgets.widget({
   downloadButton.addEventListener('click', function () {
     editor.save()
     .then((savedData) => {
-      saveJSON(encodeHTMLEntities(savedData),"example-out");
+      saveJSON(savedData,"example-out");
 
     })
     .catch((error) => {
