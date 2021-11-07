@@ -4,7 +4,7 @@
 \alias{editjs}
 \title{<Add Title>}
 \usage{
-editjs(inputId, width = NULL, height = NULL, elementId = NULL)
+editjs(inputId = NULL, width = NULL, height = NULL, elementId = NULL)
 }
 \description{
 <Add Description>
