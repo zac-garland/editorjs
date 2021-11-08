@@ -40,6 +40,6 @@ editjs()
   - [ ] parse\_json
   - [ ] reclass id’s for multiple instances
   - [ ] shiny app to rmd
-  - [ ] resize event htmlwidgets
+  - [x] resize event htmlwidgets
   - [ ] add tags `distill` module
-  - [ ] lightswitch dark / light theme
+  - [x] lightswitch dark / light theme
