@@ -34,6 +34,7 @@ HTMLWidgets.widget({
      var editor;
      var saveButton;
      var downloadButton;
+     var toggletheme;
 
 
     return {
@@ -147,17 +148,18 @@ HTMLWidgets.widget({
        */
       data: {
         blocks: [
+
           {
             type: "header",
             data: {
-              text: "Editor.js",
+              text: "Editor.js <img src='https://raw.githubusercontent.com/zac-garland/editorjs/master/man/figures/logo.svg' align='right' height='139' style='padding:25px;' />",
               level: 2
             }
           },
           {
             type : 'paragraph',
             data : {
-              text : 'Hey. Meet the new Editor. On this page you can see it in action — try to edit this text. Source code of the page contains the example of connection and configuration.'
+              text : 'Hey. Meet the new Editor. On this page you can see it in action: <b><mark class=\"cdx-marker\">try to edit this text or paste an image anywhere.</mark></b>'
             }
           },
           {
@@ -181,7 +183,7 @@ HTMLWidgets.widget({
           {
             type : 'paragraph',
             data : {
-              text : 'Classic WYSIWYG-editors produce raw HTML-markup with both content data and content appearance. On the contrary, Editor.js outputs JSON object with data of each Block. You can see an example below'
+              text : 'Editor.js outputs JSON object with data of each Block. You can see an example below'
             }
           },
           {
@@ -193,16 +195,6 @@ HTMLWidgets.widget({
           {
             type : 'delimiter',
             data : {}
-          },
-          {
-            type: 'image',
-            data: {
-              url: 'https://upload.wikimedia.org/wikipedia/commons/4/48/WikiJournal_of_Science_logo_%28flat_black%29.svg',
-              caption: '',
-              stretched: false,
-              withBorder: false,
-              withBackground: true,
-            }
           },
         ]
       },
@@ -249,13 +241,29 @@ HTMLWidgets.widget({
   });
 
 
+  toggletheme = document.querySelector('.toggle-theme input[type="checkbox"]');
+
+  function toggleTheme(event) {
+    if (event.target.checked) {
+      document.body.className = 'dark-theme';
+    } else {
+      document.body.className = '';
+    }
+  }
+
+  toggletheme.addEventListener('change', toggleTheme);
+
+
+
+
 
 
       },
 
       resize: function(width, height) {
 
-        // TODO: code to re-render the widget with a new size
+        document.getElementById('editorjs').style.width = width;
+        document.getElementById('editorjs').style.height = height;
 
       }
 

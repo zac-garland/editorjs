@@ -6,7 +6,7 @@
 #' @import htmltools
 #'
 #' @export
-editjs <- function(inputId = NULL, width = NULL, height = NULL, elementId = NULL) {
+editjs <- function(inputId = NULL, width = "100%", height = "100%", elementId = NULL) {
 
   # forward options using x
   x <- list(
