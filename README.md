@@ -43,3 +43,7 @@ editjs()
   - [x] resize event htmlwidgets
   - [ ] add tags `distill` module
   - [x] lightswitch dark / light theme
+
+# preview
+
+<img src='man/figures/preview.png' width="100%" />
