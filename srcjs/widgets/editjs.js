@@ -174,7 +174,7 @@ HTMLWidgets.widget({
             data : {
               items : [
                 'It is a block-styled editor',
-                'It returns clean data output in JSON',
+                'It returns clean data output in <code class=\"inline-code\">JSON</code>',
                 'Designed to be extendable and pluggable with a simple API',
               ],
               style: 'unordered'
@@ -183,7 +183,7 @@ HTMLWidgets.widget({
           {
             type : 'paragraph',
             data : {
-              text : 'Editor.js outputs JSON object with data of each Block. You can see an example below'
+              text : 'Editor.js outputs <code class=\"inline-code\">JSON</code> object with data of each Block. You can see an example below'
             }
           },
           {
