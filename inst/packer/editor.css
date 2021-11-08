@@ -9,6 +9,7 @@
   --surface: #fff;
   --bg: #e4e4e7;
   --text: #71717a;
+  --highlightcol: #000000;
   --shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   --inset: inset 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.15);
 }
@@ -17,6 +18,7 @@
   --surface: #27272a;
   --bg: #18181b;
   --text: #a1a1aa;
+  --highlightcol: #ffffff
   --shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.3);
   --shadow-inner: inset 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.6);
 }
@@ -212,6 +214,8 @@ input:checked + .switch:before {
   z-index: 1;
 }
 
+
+
 ::selection {
     background-color: black !important;
     color: white !important;
@@ -242,5 +246,6 @@ input:checked + .switch:before {
 
 /*marker*/
 .cdx-marker {
-    background: rgb(0 255 243 / 75%);
+    background: rgb(91 91 92 / 50%);
+    color: white;
 }

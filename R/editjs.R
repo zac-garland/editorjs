@@ -1,6 +1,6 @@
-#' <Add Title>
+#' editjs instance
 #'
-#' <Add Description>
+#' html widget for provoking editor instance
 #'
 #' @import htmlwidgets
 #' @import htmltools

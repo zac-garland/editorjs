@@ -2,10 +2,10 @@
 % Please edit documentation in R/editjs.R
 \name{editjs}
 \alias{editjs}
-\title{<Add Title>}
+\title{editjs instance}
 \usage{
 editjs(inputId = NULL, width = "100\%", height = "100\%", elementId = NULL)
 }
 \description{
-<Add Description>
+html widget for provoking editor instance
 }
