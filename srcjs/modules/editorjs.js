@@ -1,3 +1,5 @@
+// this should be provided outside widget component
+// or can be added to it with prependContent/appendContent from R
 const editJSdiv = () => {
   return `
   <div class="editjs-container">
