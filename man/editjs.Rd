@@ -4,7 +4,7 @@
 \alias{editjs}
 \title{editjs instance}
 \usage{
-editjs(inputId = NULL, width = "100\%", height = "100\%", elementId = NULL)
+editjs(rmd = "", width = "100\%", height = "100\%", elementId = NULL)
 }
 \description{
 html widget for provoking editor instance

@@ -9,7 +9,4 @@ function saveJSON(exportObj, exportName){
     downloadAnchorNode.remove();
 }
 
-
-
-
 export { saveJSON };

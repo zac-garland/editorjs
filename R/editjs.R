@@ -6,15 +6,20 @@
 #' @import htmltools
 #'
 #' @export
-editjs <- function(inputId = NULL, width = "100%", height = "100%", elementId = NULL) {
+editjs <- function(rmd = "", width = "100%", height = "100%", elementId = NULL) {
+  blocks <- parse_rmd(rmd)
 
-  # forward options using x
   x <- list(
-    inputId = inputId
+    opts = list(
+      readOnly = TRUE,
+      data = list(
+        blocks = blocks
+      )
+    )
   )
 
   # create widget
-  out_widget <- htmlwidgets::createWidget(
+  htmlwidgets::createWidget(
     name = "editjs",
     x,
     width = width,
@@ -22,19 +27,6 @@ editjs <- function(inputId = NULL, width = "100%", height = "100%", elementId = 
     package = "editorjs",
     elementId = elementId
   )
-
-  out_widget$dependencies <- list(
-    htmltools::htmlDependency(
-      name = "editjs-css",
-      version = utils::packageVersion("editorjs"),
-      src = "packer",
-      package = "editorjs",
-      stylesheet = "editor.css"
-    )
-
-  )
-
-  out_widget
 }
 
 
