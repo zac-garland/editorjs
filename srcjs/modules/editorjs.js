@@ -20,6 +20,10 @@ const editJSdiv = () => {
         editor.download()
       </div>
 
+      <div class="editjs-container__button" id="replaceData">
+        editor.update()
+      </div>
+
     </div>
     <div class="editjs-container__output">
       <pre class="editjs-container__output-content" id="output"></pre>

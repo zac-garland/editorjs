@@ -18,7 +18,7 @@ c("@editorjs/editorjs","@editorjs/header@latest", "@editorjs/simple-image@latest
   "@editorjs/quote@latest", "@editorjs/code@latest", "@editorjs/embed@latest",
   "@editorjs/table@latest", "@editorjs/link@latest", "@editorjs/warning@latest",
   "@editorjs/marker@latest", "@editorjs/inline-code@latest") %>%
-  map(~{
+  purrr::map(~{
     packer::npm_install(.x,scope = "prod")
   })
 
